@@ -1,0 +1,156 @@
+
+html {
+  font-family: "JetBrains Mono", monospace;
+  background-color: white;
+  overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;;
+  color:black;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
+a {
+  color: #4361ee;
+}
+
+nav {
+  border: solid 1px;
+  color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-around; /* added */
+  list-style-type: none;
+}
+
+nav li {
+  margin: 20px;
+  
+}
+  
+  .fit-picture {
+    height: 150px;
+    width: 150px;
+    border: solid 2px;
+    border-radius: 5px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+
+    animation-name: shake;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes shake{
+    0% {transform: translate(0, 0px);}
+    50% {transform: translate(0, 15px);}
+    100% {transform: translate(0, -0px);}
+  }
+    
+  /* Media queries for resizing pictures and lists */
+@media (min-width: 600px) {
+  .fit-picture {
+    height: 300px;
+    width: 300px;
+  }
+  li { 
+    font-size: 1.5em;
+  }
+}
+
+  #jokes {
+   border-bottom: solid;
+    
+  }
+
+  #dadJokeButton{
+    background-color: #52b788;
+    border-radius: 2px;
+   
+  }
+
+  /* Changes color for lists */
+  li:nth-of-type(1) {
+    color: #f72585;
+}
+
+li:nth-of-type(2) {
+    color: #7209b7;
+}
+
+li:nth-of-type(3) {
+    color: #3a0ca3;
+}
+
+li:nth-of-type(4) {
+    color: #4361ee;
+}
+
+
+
+
+  
+  
+  /* Style for the footer */
+footer {
+  border-top: 1px solid black;  
+  padding: 10px 0;  
+  position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 40px;
+    color:black
+    
+    
+}
+
+/* Style for the list inside the footer */
+footer ul {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+}
+
+footer li {
+  margin-right: 5px;
+  list-style-type: none;
+}
+
+
+
+  
+ 
+  
+  
+  
